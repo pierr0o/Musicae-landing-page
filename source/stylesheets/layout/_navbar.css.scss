@@ -9,7 +9,7 @@ $navbar-bg: $black;
 /* -------------------------------------
  * Box model
  * ------------------------------------- */
-$navbar-height: 60px;
+$navbar-height: 70px;
 $navbar-vertical-padding: 25%;
 $navbar-horizontal-padding: 20px;
 $navbar-border-bottom-width: 0px;
@@ -37,30 +37,27 @@ $navbar-profile-border-width: 2px;
  * ------------------------------------- */
 
 .navbar {
-  height: $navbar-height;
   background-color: black;
   width: 100%;
   margin-bottom: 0px;
+  height: 60px;
 }
 
-
+.container-fluid {
+  padding-left: 0px;
+}
 
 .navbar-default {
-    background-color: none;
-    border-color: black;
-    border-bottom: solid $nero 0.2px;
+  border: none;
+  border-bottom: solid $nero 0.2px;
 }
   
 .logo {
-  margin-top: 11px;
-}
-
-.navbar-nav {
-    margin-left: 70px;
+  height: 60px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    margin-left: 30px;
+    margin: 0px 80px;
     color: $aluminium;
     line-height: 30px;
     &:hover {

@@ -22,6 +22,23 @@ $btn-hover-opacity: 1;
   }
 }
 
+
+.btn-navbar {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  line-height: 25px;
+  border-radius: 5px;
+  background: $red;
+  color: $aluminium;
+  border: solid $nero 0.5px;
+  &:hover{
+    opacity: $btn-hover-opacity;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
 .btn-rounded-square {
   background: black;
   border-top: 2px solid $steel;
