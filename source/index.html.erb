@@ -1,10 +1,142 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Musicae, find the music you love
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div class="container-fluid" id="banner">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<h2>La musique par ceux qui la jouent</h2>
+				<br>
+				<br>
+				<p>Cherchez, écoutez et comparez les interprétations de vos choix</p>
+			</div>
+		</div>
+	</div>
+	<br>
+
+
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+			    <div class="input-group">
+			      <input type="text" class="form-control btn-rounded"" placeholder="Gergiev dirige Chostakovitch...">
+			      <span class="input-group-btn">
+			        <button class="form-control btn-rounded-square text-center">
+			        Go!</button>
+			      </span>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+  		</div><!-- /.row -->
+	</div>
 </div>
+	 
+<div class="bg-white text-center padded">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="card">
+					<%= image_tag "composer.png" %>
+					<h2>Composer</h2>
+					<p>Find your favorite composer</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="card">
+					<%= image_tag "key.png" %>
+					<h2>Piece</h2>
+					<p>Find his work</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="card">
+					<%= image_tag "conductor.png" %>
+					<h2>Interprets</h2>
+					<p>Discover different interpretations</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="card">
+					<%= image_tag "violin.png" %>	<h2>Soloist</h2>
+					<p>Discover musicians</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+
+<div class="bg-red text-center">
+	<div class="card padded slideLeft">
+		<h2>Let's keep in touch</h2>
+		<p>Leave us your email and participate to Musicae</p>
+		<form action="" class="form-inline">
+		  <input type="email" class="form-control" placeholder="amadeus@mozart.com">
+		  <input type="submit" value="Subscribe" class="btn btn-primary">
+		</form>
+	</div>
+</div>
+
+<div id="testimonials">
+	<div class="container">
+		<div class="row">
+			<% data.testimonials.each do |testimonial| %>
+				<div class="col-xs-12 col-md-6">
+					<div class="testimonial text-center padded">
+						<%= image_tag testimonial.image_file, class:'img-circle' %>
+						<h3><%= testimonial.name %></h3>
+						<p><%= testimonial.content %></p>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your contact information</h4>
+      </div>
+      <div class="modal-body">
+      	<form action="">
+      		
+      		<div class="row">
+		      	<div class="col-xs-6">
+		      		<div class="form-group">
+			      		<label for="FirstName">First Name</label>
+			      		<input type="text" placeholder="Wolfgang Amadeus" class="form-control" id="FirstName">
+			      	</div>
+		      	</div>
+
+		      	<div class="col-xs-6">
+		      		<div class="form-group">
+			      		<label for="LastName">Last Name</label>
+			      		<input type="text" placeholder="Mozart" class="form-control" id="LastName">
+			      	</div>
+		      	</div>
+		    </div>
+
+			<div class="form-group">
+				<label for="Email">Your email</label>
+	      		<input type="email" class="form-control" placeholder="richard@strauss.com" id="Email">
+	      	</div>
+
+      		<input type="submit" value="Submit" class="btn-rounded">
+      	
+
+      	</form>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+	
+
+

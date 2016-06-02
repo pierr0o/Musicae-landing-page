@@ -1,0 +1,47 @@
+// _buttons.css.scss
+
+$btn-color: $red;
+$btn-opacity: 0.7;
+$btn-hover-opacity: 1;
+
+.btn-rounded {
+  background: black;
+  border-radius: 5px;
+  padding: 0.6em 1.5em;
+  border: 2px solid $steel;
+  text-decoration: none;
+  opacity: $btn-opacity;
+  transition: opacity 0.3s ease;
+  background-color: none;
+  width : 300px;
+  height: 30px;
+  &:hover{
+    opacity: $btn-hover-opacity;
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.btn-rounded-square {
+  background: black;
+  border-top: 2px solid $steel;
+  border-bottom: 2px solid $steel;
+  border-right: 2px solid $steel;
+  border-left: none;
+  text-decoration: none;
+  opacity: $btn-opacity;
+  transition: opacity 0.3s ease;
+  background-color: none;
+  width : 50px;
+  height: 30px;
+  line-height: 15px;
+  &:hover{
+    opacity: $btn-hover-opacity;
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.form-control {
+  color: #989898;
+}

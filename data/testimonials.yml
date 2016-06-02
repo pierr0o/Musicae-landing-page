@@ -1,0 +1,6 @@
+- name: Mozart
+  content: If only I had had access to musicae during my lifetime!
+  image_file: mozart.jpg
+- name: Beethoven
+  content: I never imagined that there could be so many version of my work.
+  image_file: beethoven.jpg

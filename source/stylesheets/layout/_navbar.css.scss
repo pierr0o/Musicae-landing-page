@@ -1,131 +1,135 @@
-/* Main class */
-.navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
-  display: flex;
-  height: 70px;
-  padding: 0px 30px;
-  align-items: center;
-  justify-content: space-between;
-}
+/* -------------------------------------
+ * Colors & Fonts
+ * ------------------------------------- */
+$navbar-color: $aluminium;
+$navbar-hover-color: $white;
+$navbar-font-family: $my-font;
+$navbar-bg: $black;
 
-/* Optional class to fix the navbar on top */
-.navbar-wagon-fixed {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
+/* -------------------------------------
+ * Box model
+ * ------------------------------------- */
+$navbar-height: 60px;
+$navbar-vertical-padding: 25%;
+$navbar-horizontal-padding: 20px;
+$navbar-border-bottom-width: 0px;
+$navbar-border-bottom-color: $gray;
+$navbar-margin: solid $nero 30px;
+
+/* -------------------------------------
+ * Navbar button
+ * ------------------------------------- */
+$navbar-btn-height: 60px;
+$navbar-btn-bg: lightgray;
+$navbar-btn-color: white;
+$navbar-btn-horizontal-padding: 10px;
+$navbar-btn-radius: 2px;
+
+/* -------------------------------------
+ * Navbar profile picture
+ * ------------------------------------- */
+$navbar-profile-radius: 50%;
+$navbar-profile-border-color: white;
+$navbar-profile-border-width: 2px;
+
+/* -------------------------------------
+ * SCSS code
+ * ------------------------------------- */
+
+.navbar {
+  height: $navbar-height;
+  background-color: black;
   width: 100%;
+  margin-bottom: 0px;
 }
 
-/* Navbar logo */
-.navbar-wagon-brand img {
-  width: 50px;
+
+
+.navbar-default {
+    background-color: none;
+    border-color: black;
+    border-bottom: solid $nero 0.2px;
+}
+  
+.logo {
+  margin-top: 11px;
 }
 
-/* Navbar right section (with form, links, button) */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar-nav {
+    margin-left: 70px;
 }
 
-/* Navbar item */
-.navbar-wagon-item {
-  flex: 0 1 auto;
-  cursor: pointer;
-  padding: 0 20px;
+.navbar-default .navbar-nav > li > a {
+    margin-left: 30px;
+    color: $aluminium;
+    line-height: 30px;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+
 }
 
-/* Navbar standard link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
-}
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
 
-/* Navbar right button */
-.navbar-wagon-button {
-  margin-left: 10px;
-  padding: 0 20px;
-  border-radius: 20em;
-  line-height: 40px;
-  background-color: #D23333;
-  color: white;
-  font-size: 14px;
-  border: 2px solid #D23333;
-}
-.navbar-wagon-button:hover {
-  color: white;
-  background: #D23333;
-  border-color: #ac2626;
-}
 
-/* Navbar search form */
-.navbar-wagon-search {
-  flex: 0 1 300px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 10px;
-  position: relative;
-}
-.navbar-wagon-search-btn {
-  line-height: 40px;
-  color: #E6E6E6;
-  border: none;
-  background: transparent;
-  position: absolute;
-  right: 14px;
-  top: -2px;
-  z-index: 1;
-}
-.navbar-wagon-search-input {
-  flex: 0 1 300px;
-  transition: all 0.15s ease;
-  line-height: 40px;
-  font-weight: lighter;
-  color: #666666;
-  border: 1px solid #E6E6E6;
-  border-radius: 5px;
-  padding: 0 10px;
-  font-size: 14px;
-  outline: none;
-}
-.navbar-wagon-search-input:focus  {
-  border: 1px solid #CCCCCC;
-}
 
-/* Navbar dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
+
+
+
+
+// .navbar {
+//   height: $navbar-height;
+//   background-color: $navbar-bg;
+//   color: $navbar-color;
+//   margin: $navbar-margin;
+//   padding: 10px;
+//   nav {
+//       background-color: $navbar-bg;
+//       height: $navbar-height;
+//       padding: 0px;
+//   }
+//   ul {
+//     height: 70px;
+//     line-height: 70px;
+//     margin: 0px;
+//     border-bottom: solid $nero 0.2px;
+//     li {
+//     list-style-type: none;
+//     }
+//   }
+// }
+
+// .row {
+//     margin-left: 0px;
+//     margin-right: 0px;
+// }
+
+// .logo {
+//   margin-left: 0px;
+//   padding: 0px;
+//   &:hover {
+//     color: $white;
+//     text-decoration: none;
+//   }
+// }
+
+
+// .navbar-links {
+//   text-decoration: none;
+//   color: $navbar-color;
+//   &:hover, :visited {
+//     color: $white;
+//     text-decoration: none;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
