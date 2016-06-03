@@ -8,9 +8,11 @@ $header-font: "Montserrat", "sans-serif";
 
 // Local fonts (uncomment following lines)
 @font-face {
-font-family: "AWConquerorSans-Light";
-src: font-url('AWConquerorSans-Light.otf');}
+font-family: "AWConquerorSans-Light", "AWConquerorDidot-Light";
+src: font-url('AWConquerorSans-Light.otf', 'AWConquerorDidot-Light.otf');}
 $my-font: "AWConquerorSans-Light"; 
+$my-font-didot: "AWConquerorDidot-Light";
+
 
 
 
@@ -23,7 +25,9 @@ $base-height: 1.4;
  * Colors
  * ------------------------------------- */
 // Scheme
-$red: #520000;
+$red: #864747;
+$red-darker:#643535;
+$red-lighter: #f3ecec;
 $white: #FFFFFF;
 $black: black;
 $whitedarken: #FAFAFA;
@@ -37,6 +41,7 @@ $steel:#666666;
 $wildsand: #F4F3F4;
 $nero: #262626;
 $aluminium: #999999;
+$iron: #D6D6D8;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222

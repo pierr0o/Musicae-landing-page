@@ -44,81 +44,47 @@ $navbar-profile-border-width: 2px;
 }
 
 .container-fluid {
-  padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 10px;
 }
 
 .navbar-default {
   border: none;
   border-bottom: solid $nero 0.2px;
 }
+
+.container-fluid .navbar-header {
+  margin-left: 60px;
+}
   
 .logo {
-  height: 60px;
+  height: 30px;
+  position: relative;
+  top: 15px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    margin: 0px 80px;
     color: $aluminium;
     line-height: 30px;
+    margin-left: 20px;
+    font-size: 16px;
     &:hover {
       color: $white;
       text-decoration: none;
     }
+}
 
+.navbar-right {
+    float: right !important;
+    margin-right: -20px;
 }
 
 
 
 
 
-
-
-
-// .navbar {
-//   height: $navbar-height;
-//   background-color: $navbar-bg;
-//   color: $navbar-color;
-//   margin: $navbar-margin;
-//   padding: 10px;
-//   nav {
-//       background-color: $navbar-bg;
-//       height: $navbar-height;
-//       padding: 0px;
-//   }
-//   ul {
-//     height: 70px;
-//     line-height: 70px;
-//     margin: 0px;
-//     border-bottom: solid $nero 0.2px;
-//     li {
-//     list-style-type: none;
-//     }
-//   }
-// }
-
-// .row {
-//     margin-left: 0px;
-//     margin-right: 0px;
-// }
-
-// .logo {
-//   margin-left: 0px;
-//   padding: 0px;
-//   &:hover {
-//     color: $white;
-//     text-decoration: none;
-//   }
-// }
-
-
-// .navbar-links {
-//   text-decoration: none;
-//   color: $navbar-color;
-//   &:hover, :visited {
-//     color: $white;
-//     text-decoration: none;
-//   }
-// }
 
 
 
