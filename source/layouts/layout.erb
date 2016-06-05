@@ -14,9 +14,9 @@
     <title>Musicae, find the music you love</title>
 
     <%= stylesheet_link_tag "all" %>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-
     <%= javascript_include_tag  "all" %>
+
+
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -37,7 +37,7 @@
 
 
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid navbar-content">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -46,7 +46,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <% logo = image_tag("logo.jpg", :alt => "logo", class:'logo') %>
+        <% logo = image_tag("logo.png", :alt => "logo", class:'logo') %>
         <%= link_to logo, "/index.html" %> 
       </div>
 
@@ -126,7 +126,7 @@
       </div>
     </div>
   
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+   
 
 
   </body>

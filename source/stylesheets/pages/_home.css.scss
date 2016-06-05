@@ -3,6 +3,8 @@ body {
 }
 
 #banner {
+	position: relative;
+	top: $navbar-height;
 	background-image: url(../images/cover.jpg);
 	color: $aluminium;
 	padding-top: 220px;
@@ -39,6 +41,32 @@ body {
 
 .img-composer {
 	width: 600px;
+}
+
+.card-content {
+	position: relative;
+	top: $navbar-height;
+	height: 430px;
+	background-color: #9591D0;
+}
+
+
+
+.slider {
+	width: 900px;
+	height: 300px;
+	margin: auto;
+}
+
+.item {
+	text-align: center;
+}
+
+.frame-position {
+	position: relative;
+	top: 30px;
+	height: 200px;
+	margin-bottom: 50px;
 }
 
 

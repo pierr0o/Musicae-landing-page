@@ -1,85 +1,94 @@
 /* -------------------------------------
  * Colors & Fonts
  * ------------------------------------- */
-$navbar-color: $aluminium;
-$navbar-hover-color: $white;
+$navbar-color: $black;
 $navbar-font-family: $my-font;
-$navbar-bg: $black;
+$navbar-bg: $white;
 
 /* -------------------------------------
  * Box model
  * ------------------------------------- */
-$navbar-height: 70px;
-$navbar-vertical-padding: 25%;
-$navbar-horizontal-padding: 20px;
-$navbar-border-bottom-width: 0px;
-$navbar-border-bottom-color: $gray;
-$navbar-margin: solid $nero 30px;
+$navbar-height: 76px;
+$navbar-margin-bottom: 0px;
 
 /* -------------------------------------
- * Navbar button
+ * Navbar links
  * ------------------------------------- */
-$navbar-btn-height: 60px;
-$navbar-btn-bg: lightgray;
-$navbar-btn-color: white;
-$navbar-btn-horizontal-padding: 10px;
-$navbar-btn-radius: 2px;
+$navbar-link-margin-left: 20px;
+$navbar-link-font-size: 16px;
+$navbar-link-hover-color: $aluminium;
+$navbar-link-text-decoration: none;
+$navbar-line-height: 54px;
+
+
 
 /* -------------------------------------
- * Navbar profile picture
+ * Navbar logo
  * ------------------------------------- */
-$navbar-profile-radius: 50%;
-$navbar-profile-border-color: white;
-$navbar-profile-border-width: 2px;
+$navbar-logo-height: 30px;
+$navbar-logo-margin-top: 23px;
 
 /* -------------------------------------
  * SCSS code
  * ------------------------------------- */
 
 .navbar {
-  background-color: black;
-  width: 100%;
-  margin-bottom: 0px;
-  height: 60px;
+  background-color: $navbar-bg;
+  margin-bottom: $navbar-margin-bottom;
+  height: $navbar-height;
 }
 
-.container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0px;
-    padding-right: 10px;
+.navbar-content {
+  margin-left: 30px;
 }
+
 
 .navbar-default {
   border: none;
-  border-bottom: solid $nero 0.2px;
+  // border-bottom: solid $nero 0.2px;
 }
 
-.container-fluid .navbar-header {
-  margin-left: 60px;
-}
   
 .logo {
-  height: 30px;
-  position: relative;
-  top: 15px;
+  height: $navbar-logo-height;
+  margin-top: $navbar-logo-margin-top;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: $aluminium;
-    line-height: 30px;
-    margin-left: 20px;
-    font-size: 16px;
+    color: $navbar-color;
+    line-height: $navbar-line-height;
+    margin-left: $navbar-link-margin-left;
+    font-size: $navbar-link-font-size;
     &:hover {
-      color: $white;
-      text-decoration: none;
+      color: $navbar-link-hover-color;
+      text-decoration: $navbar-link-text-decoration;
     }
 }
 
-.navbar-right {
-    float: right !important;
-    margin-right: -20px;
+// modal
+
+#myModal {
+  font-family: $my-font;
 }
+
+.navbar-modal {
+  background: $red;
+  height: $navbar-height;
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+#contact-color {
+  color: $nero;
+  margin: 0px;
+  text-align: center;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+
 
 
 
