@@ -1,5 +1,10 @@
 body {
 	font-family: $my-font;
+	h1 h2 h3 h4 p a {
+		font-family: $my-font;
+		letter-spacing: 2px;
+		color: $black;
+	}
 }
 
 #banner {
@@ -11,50 +16,57 @@ body {
 	background-size: cover;
 	height: 700px;
 	h1 {
-		font-family: $my-font-didot;
+		font-family: $my-font;
 		font-size: 70px;
 		line-height: 100px;
-		letter-spacing: 7px;
+		letter-spacing: 2px;
 		color: $white;
 	}
 	p {
-		font-family: $my-font;
 		font-size: 20px;
 		color: $aluminium;
 	}
 }
 
-
-#versions {
-	background: $nero;
+.wrapper {
+	height: 200px;
 	h2 {
-		font-family: $my-font-didot;
-		letter-spacing: 5px;
-		color: $aluminium;
-	}
-	p {
-		font-family: $my-font-didot;
-		letter-spacing: 5px;
-		color: $aluminium;
+		font-family: $my-font;
+		letter-spacing: 2px;
 	}
 }
+
+.box {
+	margin: 0px;
+}
+
+// Demo 
+
+.demo {
+	position: relative;
+	top: $navbar-height;
+}
+
 
 .img-composer {
 	width: 600px;
 }
 
-.card-content {
-	position: relative;
-	top: $navbar-height;
-	height: 430px;
-	background-color: #9591D0;
+
+// Slider 
+
+.wrap-slider {
+	background-color: black;
+	padding-top: 50px;
+	p {
+		color: white;
+		opacity: 0.8;
+	}
 }
 
-
-
 .slider {
-	width: 900px;
-	height: 300px;
+	width: 950px;
+	height: 500px;
 	margin: auto;
 }
 
@@ -62,11 +74,39 @@ body {
 	text-align: center;
 }
 
-.frame-position {
+.picture-position {
+	margin-left: 25px;
+}
+
+
+
+// Composers 
+
+.composers {
+	background: red;
+	margin: 0px;
+	padding: 100px 10px;
 	position: relative;
-	top: 30px;
-	height: 200px;
-	margin-bottom: 50px;
+	top: $navbar-height;
+}
+
+// Interpreters 
+
+.interpreters {
+	margin: 0px;
+	padding: 100px 10px;
+	position: relative;
+	top: $navbar-height;
+}
+
+
+// Pieces 
+
+.pieces {
+	margin: 0px;
+	padding: 100px 10px;
+	position: relative;
+	top: $navbar-height;
 }
 
 

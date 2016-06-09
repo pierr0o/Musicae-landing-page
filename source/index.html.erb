@@ -2,39 +2,50 @@
 title: Musicae, find the music you love
 ---
 
-	<!-- banner -->
-	<div class="container-fluid" id="banner">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2">
-					<h1>La musique par ceux qui la jouent</h1>	
-				</div>
+<!-- banner -->
+<div class="container-fluid" id="banner">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<h1>La musique par ceux qui la jouent</h1>
+				<br>
+				<br>
+				<%= link_to( "<strong>Ecoutez !<strong>", "#music" , class:'btn-rounded') %>
 			</div>
 		</div>
 	</div>
-	 
-	<!-- carrousel slick -->
-	<div class="container-fluid card-content"> 
+</div>
+ 
+
+
+<!-- Demo -->
+
+<div class="demo" id="music-section">
+	<div class="wrapper">
 	    <div class="row">
 	        <div class="col-xs-6 col-xs-offset-3 text-center">
 	            <h2>Découvrez des interprétations</h2>
 	        </div>
 	    </div>
+	</div>
+	<div class="box">
 	    <div class="row">
-	        <div class="container-fluid box-padded">
+	        <div class="wrap-slider">
+	        	<!-- Caroussel slick -->
 	            <div class="slider">
 	                <div class="item">
-	                    <div class="row frame-position">
-	                        <iframe width="267" height="100%" src="https://www.youtube.com/embed/lLZaupG8WP4?list=PL9t9N1owgSRLAErhETYuuAwWSeCJ85N4o&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <div class="row frame-position text-center">
+	                    	<%= image_tag("Glenn-Gould.jpg", height:"301px", width:"450px", class:'picture-position') %>
 	                    </div>
-
-	                    <div class="row">
+	                    <div class="row frame-position text-center">
+	                    	<iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A1aCpHSQE5ghxibsQ5gkBe0" width="450px" height="100px" frameborder="0" allowtransparency="true"></iframe>
 	                        <p class="text-position text-center">Glen Gould joue les variations Goldberg <br> de Bach</p>
 	                    </div>
 	                </div>
+
 	                <div class="item">
 	                    <div class="row frame-position">
-	                        <iframe width="267" height="100%" src="https://www.youtube.com/embed/lLZaupG8WP4?list=PL9t9N1owgSRLAErhETYuuAwWSeCJ85N4o&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                        <iframe width="450px" height="301px" src="https://www.youtube.com/embed/lLZaupG8WP4?list=PL9t9N1owgSRLAErhETYuuAwWSeCJ85N4o&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	                    </div>
 
 	                    <div class="row">
@@ -43,47 +54,93 @@ title: Musicae, find the music you love
 	                </div>
 	                <div class="item">
 	                    <div class="row frame-position">
-	                        <iframe width="267" height="100%" src="https://www.youtube.com/embed/lLZaupG8WP4?list=PL9t9N1owgSRLAErhETYuuAwWSeCJ85N4o&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    	<%= image_tag("perahia.jpg", width:'450px', height:'301px', class:'picture-position') %>
 	                    </div>
-
-	                    <div class="row">
-	                        <p>Glen Gould</p>
+	                    <div class="row frame-position text-center">
+	                    	<iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A2ecywJZyq9FeZWhKUT0kIq" width="450px" height="100px" frameborder="0" allowtransparency="true"></iframe>
+	                        <p class="text-position text-center">Murray Perahia</p>
 	                    </div>
 	                </div>
 	                <div class="item">
 	                    <div class="row frame-position">
-	                        <iframe width="267" height="100%" src="https://www.youtube.com/embed/lLZaupG8WP4?list=PL9t9N1owgSRLAErhETYuuAwWSeCJ85N4o&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    	<%= image_tag("perahia.jpg", width:'450px', height:'301px', class:'picture-position') %>
 	                    </div>
-
-	                    <div class="row text-position">
-	                        <p>Glen Gould</p>
-	                    </div>
+	                </div>
 	                </div>
 	            </div>
 	        </div>  
-	    </div>     
+	    </div> 
 	</div> 
+    
+</div> 
 
 
+<!-- composers -->
 
-<!-- <div class="bg-red-lighter padded">
-	<div class="container-fluid text-center">
+<div class="composers" id="composers-section">
+	<div class="wrapper">
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-5 col-xs-offset-1">
 				<h3>Compositeurs</h3>
+				<br>
+				<p>Naviguez dans notre base de donnée de compositeurs. Notre objectif est de vous fournir la liste la plus complète qui soit des grands compositeurs de la musique classique</p>
 			</div>
-			<div class="col-xs-6 col-xs-offset-3">
-				<%= image_tag "mozartscore.png", class:'img-composer' %>
+			<div class="col-xs-6">
+				<%= image_tag("beethoven.jpg") %>
 			</div>
 		</div>
-		<br>
 	</div>
-</div> -->
+</div>
+
+<!-- interpreters -->
+
+<div class="interpreters" id="interpreters-section">
+	<div class="wrapper">
+		<div class="row text-center">
+			<div class="col-xs-6">
+				<h3>Text</h3>
+			</div>
+			<div class="col-xs-6">
+				<%= image_tag("#") %>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+<!-- pieces -->
+
+<div class="pieces" id="pieces-section">
+	<div class="wrapper">
+		<div class="row text-center">
+			<div class="col-xs-6">
+				<h3>Text</h3>
+			</div>
+			<div class="col-xs-6">
+				<%= image_tag("#") %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- aboutus -->
+
+<div class="container-fluid card-content" id="aboutus">
+	<div class="row text-center">
+		<div class="col-xs-6">
+			<h3>Text</h3>
+		</div>
+		<div class="col-xs-6">
+			<%= image_tag("#") %>
+		</div>
+	</div>
+</div>
+
 		
 
 
 
-<div id="testimonials">
+<!-- <div id="testimonials">
 	<div class="container">
 		<div class="row">
 			<% data.testimonials.each do |testimonial| %>
@@ -97,7 +154,7 @@ title: Musicae, find the music you love
 			<% end %>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <!-- Modal -->

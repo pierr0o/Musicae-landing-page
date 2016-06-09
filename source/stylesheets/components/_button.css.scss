@@ -5,7 +5,8 @@ $btn-opacity: 0.7;
 $btn-hover-opacity: 1;
 
 .btn-rounded {
-  background: black;
+  background: $white;
+  color: $nero;
   border-radius: 5px;
   padding: 0.6em 1.5em;
   border: 2px solid $steel;

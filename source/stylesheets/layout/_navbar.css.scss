@@ -39,7 +39,7 @@ $navbar-logo-margin-top: 23px;
 }
 
 .navbar-content {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 
@@ -54,6 +54,10 @@ $navbar-logo-margin-top: 23px;
   margin-top: $navbar-logo-margin-top;
 }
 
+.navbar-nav {
+  margin-left: 20px;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: $navbar-color;
     line-height: $navbar-line-height;
@@ -64,6 +68,19 @@ $navbar-logo-margin-top: 23px;
       text-decoration: $navbar-link-text-decoration;
     }
 }
+
+// navbar opacity scroll
+
+.navDark {
+  opacity: 0.8;
+  background-color: black;
+}
+
+.color-scroll {
+  color: red;
+}
+
+
 
 // modal
 
